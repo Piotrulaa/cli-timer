@@ -1,0 +1,19 @@
+[project]
+name = "cli-timer"
+version = "0.1.0"
+description = "Simple command-line timer"
+readme = "README.md"
+authors = [
+    { name = "Piotrulaa", email = "p.janicki.dev@gmail.com" }
+]
+requires-python = ">=3.14.4"
+dependencies = [
+    "typer>=0.26.8,<0.27.0",
+]
+
+[project.scripts]
+cli-timer = "cli_timer.main:app"
+
+[build-system]
+requires = ["uv_build>=0.11.14,<0.12.0"]
+build-backend = "uv_build"
